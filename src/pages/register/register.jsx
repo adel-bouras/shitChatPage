@@ -32,10 +32,10 @@ function Register(){
     return (
     <div id="registerContainer">
     {(response.error)&&(<h3 style={{color : 'red',textDecoration : 'underline'}}>{response.error.message}</h3>)}
-    <Text placeH='Your first name' text='First name' onchange={(v)=>setFirst(v)} />
-    <Text placeH='Your last name' text='Last name' onchange={(v)=>setLast(v)} />
-    <Text placeH='Your email' text='Email name' onchange={(v)=>setEmail(v)} />
-    <Text placeH='Your password' text='Password name' onchange={(v)=>setPassword(v)} />
+    <Text type='text' placeH='Your first name' text='First name' onchange={(v)=>setFirst(v)} />
+    <Text type='text' placeH='Your last name' text='Last name' onchange={(v)=>setLast(v)} />
+    <Text type='text' placeH='Your email' text='Email name' onchange={(v)=>setEmail(v)} />
+    <Text type='password' placeH='Your password' text='Password name' onchange={(v)=>setPassword(v)} />
         <Button url={response.success&&'/chat'} onclick={()=>setRegister(!register)} text='sing up'/>
     </div>
     )

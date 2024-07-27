@@ -9,7 +9,7 @@ function Text(props){
 
     return (
         <p className="input-container">
-    <input onChange={changeValue} type="text" placeholder={props.placeH} name="text" id="text" className="input-field" autoComplete="name" />
+    <input onChange={changeValue} type={props.type} placeholder={props.placeH} name="text" id="text" className="input-field" autoComplete="name" />
     <label className="input-label" htmlFor="text">{props.text}</label>
         </p>    
     )

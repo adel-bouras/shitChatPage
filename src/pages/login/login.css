@@ -1,0 +1,111 @@
+#loginContainer{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 70dvh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 0px 0px 200px rgb(113, 113, 113);
+    position: relative;
+    padding: 0px 0px 20px 0px;
+}
+
+#loginContainer::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom left, rgb(82, 6, 224), rgb(113, 94, 199));
+    left: -20px;
+    top: -20px;
+    z-index: -1;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+#loginContainer::after{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    right: -20px;
+    background: white;
+
+    bottom: -20px;
+    z-index: -1;
+}
+
+#loginContainer img{
+    height: 40%;
+order: -1;
+border-radius: 20px 20px 0 0;
+}
+
+#loginContainer #login{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#logOrSing{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    width: 80%;
+}
+
+
+
+@media (min-width : 1000px){
+    #logOrSing{
+        width: 80%;
+    }
+
+    #loginContainer #login{
+        height: 100%;
+        width: 50%;
+        border-radius:50px 0px 0px 50px ;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #loginContainer{ 
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        border-radius: 50px;
+        height: 70%;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 200px rgb(113, 113, 113);
+        position: relative;
+    }
+
+    #loginContainer img{
+        order: 1;
+        height: 100%;
+        width: 50%;
+        border-radius:  0px 50px 50px  0px;
+    }
+
+    #loginContainer::before{
+        width: 200px;
+        height: 200px;
+        left: -100px;
+        top: -100px;
+    }
+    
+    #loginContainer::after{
+        width: 200px;
+        height: 200px;
+        right: -100px;
+        bottom: -100px;
+    } 
+}

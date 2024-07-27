@@ -1,0 +1,18 @@
+#registerContainer{
+    width: 90%;
+    height: 90dvh;
+    border: 2px solid tomato ;
+    border-radius:20px;
+    background-color: rgb(254, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media (min-width : 1000px) {
+    #registerContainer{
+    
+    }
+    
+}

@@ -1,0 +1,58 @@
+#error{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 100dvh;
+    align-items: center;
+    justify-content: center;
+    animation: popup 0.5s ease-in-out;
+}
+
+#errorconatiner{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+#errorconatiner img{
+order: -1;
+width: 40%;
+
+}
+
+#error p{
+    text-align: center;
+}
+
+@media (min-width : 1000px) {
+    
+    #errorconatiner{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 20px;
+    }
+    #errorconatiner img{
+        width: 40%;
+        order: 1;
+    }
+    #error p{
+    font-size: 30px;
+    width: 50%;
+    }
+    #link{
+        font-size: 20px;
+    }
+}
+
+@keyframes popup {
+    0%{
+        scale: 0;
+    }
+    100%{
+        scale: 1;
+    }
+    
+}
